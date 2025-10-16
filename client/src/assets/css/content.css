@@ -1,0 +1,31 @@
+.content-upload {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.content-upload .card {
+  background: #fff;
+  border-radius: 15px;
+}
+
+.content-upload .form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.content-upload .btn-dark {
+  border-radius: 30px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.content-upload .btn-dark:hover {
+  background: #000;
+  transform: translateY(-2px);
+}
+
+.content-upload textarea,
+.content-upload input,
+.content-upload select {
+  border-radius: 10px;
+}

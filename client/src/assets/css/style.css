@@ -1,0 +1,300 @@
+/* Navbar background + shadow */
+body{
+    /* background-color: black; */
+    /* color: white; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.custom-navbar {
+  background-color: rgba(125, 125, 125, 0.5);
+  /* backdrop-filter: blur(10px); */
+  padding: 12px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+
+/* Logo */
+.logo-text {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #f3efef !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #ffffff !important;
+  margin: 0 12px;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fffefe !important;
+  background-color: #353434;
+  /* text-decoration: underline; */
+  border-radius: 5px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+
+/* Buttons */
+.custom-btn {
+  border-radius: 30px;
+  padding: 8px 20px;
+  font-size: 0.95rem;
+  transition: 0.3s;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.custom-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Hamburger icon styling */
+.custom-toggler {
+  border: none;
+}
+
+.custom-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* index page css */
+.index-header{
+    background:linear-gradient(to right, rgba(0,0,0,0.5)) ,url('../../assets/images/sli1.png');
+    height: 650px;
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+
+.hero-heading {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.hero-subheading {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+
+.fade-char {
+  opacity: 0;
+  display: inline-block;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+/* next section */
+.next-section {
+  background: #fff; /* keep it light like Handshake’s mid section */
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: clamp(24px, 2.2vw, 36px);
+}
+
+.section-subtitle {
+  color: #6c757d;
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: clamp(14px, 1.4vw, 18px);
+}
+
+/* Cards */
+.audience-card {
+  border-radius: 16px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.audience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.audience-icon {
+  color: #111; /* simple, neutral icon color */
+}
+
+/* Logo strip */
+.logo-pill {
+  border: 1px solid #e9ecef;
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* Dark mode variant (if you want to use on black pages) */
+.dark .next-section {
+  background: #0d0d0d;
+}
+.dark .section-title { color: #fff; }
+.dark .section-subtitle { color: #9aa0a6; }
+.dark .audience-card { background: #111; color: #eaeaea; border: 1px solid #1e1e1e; }
+.dark .audience-card .btn-dark { background: #fff; color: #000; border: none; }
+.dark .audience-card .btn-outline-dark { border-color: #eaeaea; color: #eaeaea; }
+.dark .audience-card .btn-outline-dark:hover { background: #eaeaea; color: #000; }
+.dark .logo-pill { border-color: #2a2a2a; color: #bdbdbd; }
+
+.text-justify {
+    text-align: justify;
+}
+
+/* about section */
+.abanner{
+    background: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('../../assets/images/banner.jpg');
+    
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+      font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+    align-items: center;
+}
+.heading{
+    font-weight: 800;
+    font-size: clamp(24px, 2.2vw, 36px);
+    color: #fcf7f7;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+.sub-heading{
+    font-weight: 800;
+    font-size: clamp(24px, 2.2vw, 36px);
+    color: #ff6f61;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+.heading::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #ff6f61; /* Accent color */
+  margin-top: 8px;
+  border-radius: 2px;
+  animation: drag 1s ease-in-out;
+}
+.heading2{
+    font-weight: 600;
+    font-size: clamp(18px, 1.5vw, 24px);
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+.heading2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #ff6f61; /* Accent color */
+  margin-top: 8px;
+  border-radius: 2px;
+  animation: drag 1s ease-in-out;
+}
+@keyframes drag {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 130px;
+    opacity: 1;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+.about-image {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  height: 440px;
+  transition: 1s all ease-in-out;
+}
+
+.aimage {
+  transition: transform 1s ease-in-out;
+}
+
+.about-image::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(232, 236, 240, 0.5); /* Blue overlay for professional look */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.8s ease-in-out, height 0.8s ease-in-out;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.about-image::after {
+  content: 'Explore Now';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  z-index: 2;
+}
+
+.about-image:hover .aimage {
+  transform: scale(1.05);
+}
+
+.about-image:hover::before {
+  width: 200%;
+  height: 200%;
+}
+
+.about-image:hover::after {
+  opacity: 1;
+}
+.slider{
+  height: 300px;
+  position: absolute;
+  margin: 0px auto !important;
+  z-index: 1;
+  top: 80%;
+  left: 8%;
+  
+  object-fit: cover;
+  overflow: hidden;
+}
+.splide__slide img{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.sp-image{
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* about section */

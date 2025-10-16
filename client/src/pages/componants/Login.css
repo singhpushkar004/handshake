@@ -1,0 +1,189 @@
+/* src/assets/css/Login.css */
+.page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f6fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    width: 900px;
+    max-width: 95%;
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.left-panel {
+    flex: 1;
+    background: linear-gradient(135deg, #5a2888, #ff6f61);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+}
+
+.abstract-circles {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 111, 97, 0.2);
+    z-index: 0;
+}
+
+.big-circle {
+    width: 120px;
+    height: 120px;
+    top: 15%;
+    left: 15%;
+}
+
+.small-circle {
+    width: 80px;
+    height: 80px;
+    bottom: 15%;
+    right: 15%;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.welcome-text {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    z-index: 1;
+    color: #fff;
+}
+
+.sub-text {
+    font-size: 14px;
+    opacity: 0.9;
+    z-index: 1;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.right-panel {
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 320px;
+}
+
+.heading {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #5a2888;
+    text-align: center;
+    border-bottom: 3px solid #ff6f61;
+    padding-bottom: 8px;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input.error {
+    border-color: #ff4d4f;
+}
+
+.error-text {
+    color: #ff4d4f;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #5a2888, #ff6f61);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+.or-divider {
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    margin: 15px 0;
+}
+
+.google-button {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.google-button:hover {
+    border-color: #ff6f61;
+}
+
+.create-account {
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+}
+
+.link {
+    margin-left: 5px;
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #5a2888;
+}

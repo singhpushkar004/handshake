@@ -1,0 +1,4 @@
+name,location,college,branch,program,batch,mobile,email,gender,dob,password,status,session
+Rahul Sharma,Jankipuram,Government polytechnic Lucknow,Computer Science,Full stack Developement with Java,VT-02,9876543210,rahul@example.com,Male,12-05-1998,1234,Active,2025-26
+Priya Mehta,Jankipuram,Government polytechnic Lucknow,Computer Science,Full stack Developement with Java,VT-03,9123456789,priya@example.com,Female,20-08-2000,1234,Active,2025-26
+Amit Kumar,Jankipuram,Government polytechnic Lucknow,Computer Science,Full stack Developement with Java,VT-04,9812345678,amit@example.com,Male,15-02-1999,1234,Inactive,2025-26

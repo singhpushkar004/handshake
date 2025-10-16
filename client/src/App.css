@@ -1,0 +1,41 @@
+.alumni-section {
+  background: #f9fafc;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #222;
+  border-left: 4px solid #007bff;
+  padding-left: 10px;
+}
+
+.news-item img {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.career-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.event-date {
+  background: #ffc107;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  min-width: 70px;
+  text-align: center;
+}
+
+/*  view content lectures*/

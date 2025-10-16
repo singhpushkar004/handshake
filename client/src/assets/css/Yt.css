@@ -1,0 +1,331 @@
+/* Reset and global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif; /* YouTube-like font */
+}
+
+/* Container */
+.container-fluid {
+  padding: 20px;
+  background-color: #f9f9f9; /* Added a light background to match YouTube's aesthetic */
+}
+
+/* Filters */
+.form-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-select {
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.select-card {
+  border-top: 5px solid #34495e;
+  border-bottom: 5px solid #34495e;
+}
+
+/* YouTube-like Viewer (Left Side) */
+.youtube-like-viewer-card {
+  background: #edf2f7 !important;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-top: 5px solid #34495e;
+}
+
+.youtube-like-title h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.youtube-like-player {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  background: #000;
+  border-radius: 12px;
+}
+
+.youtube-like-player {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: auto;
+  background: #000;
+  border-radius: 12px;
+}
+
+.youtube-like-player video,
+.youtube-like-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.audio-player {
+  padding-bottom: 0;
+  height: auto;
+}
+
+.youtube-like-image {
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.youtube-like-doc {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Comments Section */
+.youtube-like-comments {
+  margin-top: 20px;
+}
+
+.youtube-like-comments h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #030303;
+  margin-bottom: 15px;
+}
+
+.youtube-like-comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.youtube-like-textarea {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1rem;
+  resize: none;
+}
+
+.youtube-like-post-btn {
+  align-self: flex-end;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  background-color: #065fd4; /* YouTube blue */
+  border: none;
+}
+
+.youtube-like-post-btn:hover {
+  background-color: #054bb4;
+}
+
+.youtube-like-comment-list {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.youtube-like-comment-item {
+  display: flex;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.youtube-like-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ccc; /* Placeholder for avatar */
+}
+
+.youtube-like-comment-content {
+  flex: 1;
+}
+
+.youtube-like-comment-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.youtube-like-comment-header strong {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #030303;
+}
+
+.youtube-like-comment-header small {
+  font-size: 0.8rem;
+  color: #606060;
+}
+
+.youtube-like-comment-text {
+  font-size: 0.9rem;
+  color: #030303;
+  margin-bottom: 5px;
+}
+
+.youtube-like-comment-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.youtube-like-comment-actions .btn-link {
+  font-size: 0.8rem;
+  color: #606060;
+  text-decoration: none;
+}
+
+.youtube-like-comment-actions .btn-link:hover {
+  color: #065fd4;
+}
+
+/* Sidebar (Right Side) */
+.youtube-like-sidebar-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: sticky;
+  top: 0px ;
+  z-index: 1;
+  border-top: 5px solid #34495e;
+  border-bottom: 5px solid #34495e;
+}
+
+.youtube-like-sidebar-card h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #030303;
+  margin-bottom: 15px;
+}
+
+.youtube-like-accordion .accordion-item {
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+.youtube-like-accordion .accordion-button {
+  background: #f9f9f9;
+  color: #030303;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.youtube-like-accordion .accordion-button:not(.collapsed) {
+  background: #065fd4;
+  color: #fff;
+}
+
+.youtube-like-accordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+.youtube-like-accordion .accordion-body {
+  padding: 10px 0;
+}
+
+.youtube-like-accordion .list-group-item {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  color: #030303;
+  transition: background 0.2s;
+}
+
+.youtube-like-accordion .list-group-item:hover {
+  background: #f1f1f1;
+}
+
+.youtube-like-accordion .list-group-item.active {
+  background: #065fd4;
+  color: #fff;
+}
+
+.youtube-like-accordion .list-group-item small {
+  font-size: 0.8rem;
+  color: #606060;
+}
+
+.youtube-like-accordion .list-group-item.active small {
+  color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .youtube-like-viewer-card {
+    margin-bottom: 20px;
+  }
+
+  .youtube-like-sidebar-card {
+    margin-top: 20px;
+  }
+
+  .youtube-like-player {
+    padding-bottom: 56.25%; /* Maintain aspect ratio */
+  }
+
+  .form-select {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .youtube-like-title h4 {
+    font-size: 1.2rem;
+  }
+
+  .youtube-like-comments h5 {
+    font-size: 1rem;
+  }
+
+  .youtube-like-comment-item {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .youtube-like-avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .youtube-like-comment-header strong,
+  .youtube-like-comment-text {
+    font-size: 0.8rem;
+  }
+
+  .youtube-like-comment-header small {
+    font-size: 0.7rem;
+  }
+
+  .youtube-like-post-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
+#upper-row {
+  position: sticky;
+  top: 60px;
+  z-index: 999;
+}
