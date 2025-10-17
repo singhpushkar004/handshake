@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes , Route } from 'react-router'
-
+import Index from './pages/public'
 import './App.css'
 import Notfound from './pages/public/Notfound'
 import Login from './pages/componants/Login'
