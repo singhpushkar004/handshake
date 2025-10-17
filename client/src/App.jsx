@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes , Route } from 'react-router'
 
 import './App.css'
 import Notfound from './pages/public/Notfound'
-import Index from './pages/public'
 import Login from './pages/componants/Login'
 import Dashboard from './pages/admin/Dashboard'
 import Role from './pages/admin/Role'
