@@ -1,6 +1,5 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes , Route } from 'react-router'
-import Index from './pages/public'
 import './App.css'
 import Notfound from './pages/public/Notfound'
 import Login from './pages/componants/Login'
@@ -35,8 +34,8 @@ function App() {
         <Routes>
             {/* public route start */}
               <Route path='*' element={<Notfound/>}></Route>
-              <Route path='/' element={<Index/>}></Route>
-              <Route path='/signin' element={<Login/>}></Route>
+     
+              <Route path='/' element={<Login/>}></Route>
             {/* public route end */}
 
             {/* admin route start*/}
